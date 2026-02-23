@@ -5,19 +5,20 @@ Our web application is a movie recommendation and library platform designed to h
 
 The platform also provides recommendations based on trending titles and user activity, helping users find new movies and shows that match their interests. Users can search for specific titles, actors, or genres. Users can follow others’ watch lists. 
 
-The targeted audience of this web application is anyone who watches movies, from casual viewers looking for something new to watch, to film enthusiasts interested in exploring cast lists, reviews, and related media.
+The targeted audience of this web application is anyone who watches movies, from casual viewers looking for something new to watch to film enthusiasts interested in exploring cast lists, reviews, and related media.
 
 ## Description of Wireframe/Prototypes
-Here is a link to our prototype images: [Wireframe/Protoype Image](https://github.com/user-attachments/files/25452535/protoypes.pdf)
+Here is a link to our prototype images: [Wireframe/Prototype Image](https://github.com/user-attachments/files/25500765/protoypes.pdf)
+
 * Navigation: Contains buttons that direct to the following pages 
 * Account/Login 
 * Logout 
 * Watchlist 
-* Login Page: The user will be able to sign into their account with a username or email, and password. (The user will be shown links to the Registration and Forgot Password Page) 
+* Login Page: The user will be able to sign into their account with a username or email and a password. (The user will be shown links to the Registration and Forgot Password Page) 
 * Registration Page: The user will be able to create a new account with a valid email, a unique username, and a strong password. 
 * Forgot Password Page: The user will be able to recover their account via the email they registered with. The user will receive an email with instructions to recover their account. 
 * Home Page: The user will be able to do the following: 
-    * Search for Movies, Actors, and another user. 
+    * Search for Movies, Actors, and other users. 
     * Movie/TV show recommendations based on watchlist and favorite actors. 
     * View popular/trending tv shows 
     * View popular/trending actors 
