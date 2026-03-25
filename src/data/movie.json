@@ -94,9 +94,9 @@
         "Release Year":  "1937",
         "Director":  "William A. Wellman",
         "Studio / Distributor": "Selznick, United Artists",
-        "Movie Poster": "URL",
-        "Movie Description": "N/A", 
-        "List of Main Cast": "N/A",
+        "Movie Poster": "images/star_born_poster.jpg",
+        "Movie Description": "When a young actress arrives in Hollywood with hopes of stardom, a chance encounter places her under the wing of older actor Norman Maine. Adopting the stage name Vicki Lester, she co-stars with Norman in a major motion picture, but his success is clearly fading even as her career begins. After the couple wed, Vicki's fame continues to grow, but Norman descends into alcoholism, and she must decide between pursuing her dream and caring for him.", 
+        "List of Main Cast": ["Janet Gaynor", "Fredric March", "Adolphe Menjou", "Lionel Stander"],
         "Genre": "Romance/Drama"
     }, 
 ]
