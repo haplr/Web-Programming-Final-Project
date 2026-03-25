@@ -9,3 +9,18 @@
 #watch-list {
     background-color: green;
 }
+
+
+/* Login Page - code currently copied from hw1 */
+.form-error {
+    color: #6b1d1d;
+    background-color: #ef9595;
+    border: 1px solid #6b1d1d;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.hidden {
+    visibility: hidden;   
+   }
