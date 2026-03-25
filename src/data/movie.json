@@ -1,1 +1,102 @@
-[]
+[ 
+    { 
+        "Film Title": "Aladdin and His Wonderful Lamp",
+        "Release Year": "1939",
+        "Director": "Dave Fleischer",
+        "Studio / Distributor": "Paramount Pictures",
+        "Movie Poster": "URL",
+        "Movie Description": "N/A", 
+        "List of Main Cast": "N/A",
+        "Genre": 
+    }, 
+    { 
+        "Film Title": "Angel and the Badman",
+        "Release Year":  "1947",
+        "Director": "James Edward Grant",
+        "Studio / Distributor": "Republic Pictures",
+        "Movie Poster": "URL",
+        "Movie Description": "N/A", 
+        "List of Main Cast": "N/A",
+        "Genre": 
+    }, 
+    { 
+        "Film Title": "The Bat",
+        "Release Year": "1959",
+        "Director": "Crane Wilbur",
+        "Studio / Distributor": "Allied Artists",
+        "Movie Poster": "URL",
+        "Movie Description": "N/A", 
+        "List of Main Cast": "N/A",
+        "Genre": 
+    }, 
+    { 
+        "Film Title": "The Brain That Wouldn't Die",
+        "Release Year": "1962",
+        "Director": "Joseph Green",
+        "Studio / Distributor": "American International Pictures",
+        "Movie Poster": "URL",
+        "Movie Description": "N/A", 
+        "List of Main Cast": "N/A",
+        "Genre":
+    }, 
+    { 
+        "Film Title": "It's a Wonderful Life",
+        "Release Year": "1946",
+        "Director":  "Frank Capra",
+        "Studio / Distributor": "Liberty Films, RKO Pictures",
+        "Movie Poster": "URL",
+        "Movie Description": "N/A", 
+        "List of Main Cast": "N/A",
+        "Genre":
+    }, 
+    { 
+        "Film Title": "The Little Princess",
+        "Release Year": "1939",
+        "Director": "Walter Lang",
+        "Studio / Distributor": "20th Century Fox",
+        "Movie Poster": "URL",
+        "Movie Description": "N/A", 
+        "List of Main Cast": "N/A",
+        "Genre":
+    }, 
+    { 
+        "Film Title": "The Man with the Golden Arm",
+        "Release Year":  "1955",
+        "Director": "Otto Preminge",
+        "Studio / Distributor": "United Artists",
+        "Movie Poster": "URL",
+        "Movie Description": "N/A", 
+        "List of Main Cast": "N/A",
+        "Genre":
+    }, 
+    { 
+        "Film Title": "Night of the Living Dead",
+        "Release Year": "1968",
+        "Director": "George A. Romero",
+        "Studio / Distributor": "Walter Reade",
+        "Movie Poster": "URL",
+        "Movie Description": "N/A", 
+        "List of Main Cast": "N/A",
+        "Genre":
+    }, 
+    { 
+        "Film Title": "Royal Wedding",
+        "Release Year":  "1951",
+        "Director":  "Stanley Donen",
+        "Studio / Distributor": "MGM",
+        "Movie Poster": "URL",
+        "Movie Description": "N/A", 
+        "List of Main Cast": "N/A",
+        "Genre":
+    }, 
+    { 
+        "Film Title":  "A Star Is Born",
+        "Release Year":  "1937",
+        "Director":  "William A. Wellman",
+        "Studio / Distributor": "Selznick, United Artists",
+        "Movie Poster": "URL",
+        "Movie Description": "N/A", 
+        "List of Main Cast": "N/A",
+        "Genre": "Romance/Drama"
+    }, 
+]
