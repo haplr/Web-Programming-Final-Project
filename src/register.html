@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterIMDB | Register</title>
+
+    <script type="module">
+        import register from "./js/login.js";
+
+
+        document.querySelector("button").addEventListner("click", ()=>register());
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Welcome to Better IMDB</h1>
+
+        <section>
+            <h2>Register</h2>
+            <form>
+                <label for="email">Email Address</label>
+                <input id="email" type="text" name="email" />
+            </form>
+
+            <form>
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username" />
+            </form>
+
+            <form>
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" />
+            </form>
+
+            <form>
+                <label for="reenter-password">Reenter Password</label>
+                <input type="password" name="reenter-password" />
+            </form>
+
+            <p>Already Registered? <a href="./login.html">sign in</a></p>
+            <button>Register Account</button>
+        </section>
+
+    </main>
+</body>
+</html>
