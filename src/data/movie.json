@@ -4,90 +4,90 @@
         "Release Year": "1939",
         "Director": "Dave Fleischer",
         "Studio / Distributor": "Paramount Pictures",
-        "Movie Poster": "URL",
-        "Movie Description": "N/A", 
-        "List of Main Cast": "N/A",
-        "Genre": 
+        "Movie Poster": "images/aladdin.jpg",
+        "Movie Description": "The story of Aladdin is portrayed by Popeye and Olive Oyl. It begins when an evil sorcerer coaxes Aladdin (Popeye) to a dangerous cave to retrieve the magic lamp. When he retrieves the lamp, the sorcerer traps Aladdin in the cave but drops the lamp in first. When the lamp is rubbed, a genie pops out and grants Aladdin a wish of being a prince to fall in love with the beautiful princess (Olive Oyl). However, the evil sorcerer kidnaps the princess and sends evil monsters after Aladdin, but, with the help of his spinach power, Aladdin can put the trouble right.", 
+        "List of Main Cast": ["Jack Mercer", "Margie Hines", "Carl Meyer", "Arthur Boran"],
+        "Genre": ["Family", "Adventure"]
     }, 
     { 
         "Film Title": "Angel and the Badman",
-        "Release Year":  "1947",
+        "Release Year": "1947",
         "Director": "James Edward Grant",
         "Studio / Distributor": "Republic Pictures",
-        "Movie Poster": "URL",
-        "Movie Description": "N/A", 
-        "List of Main Cast": "N/A",
-        "Genre": 
+        "Movie Poster": "images/angel_badman.jpg",
+        "Movie Description": "Quirt Evans, an all round bad guy, is nursed back to health and sought after by Penelope Worth, a Quaker girl. He eventually finds himself having to choose between his world and the world Penelope lives in.", 
+        "List of Main Cast": ["John Wayne", "Gail Russell", "Harry Carey"],
+        "Genre": ["Western", "Romance"]
     }, 
     { 
         "Film Title": "The Bat",
         "Release Year": "1959",
         "Director": "Crane Wilbur",
         "Studio / Distributor": "Allied Artists",
-        "Movie Poster": "URL",
-        "Movie Description": "N/A", 
-        "List of Main Cast": "N/A",
-        "Genre": 
+        "Movie Poster": "images/bat.jpg",
+        "Movie Description": "A crazed killer known as 'The Bat' is on the loose in a mansion full of people.", 
+        "List of Main Cast": ["Vincent Price", "Agnes Moorehead", "Gavin Gordon"],
+        "Genre": ["Horror", "Mystery"]
     }, 
     { 
         "Film Title": "The Brain That Wouldn't Die",
         "Release Year": "1962",
         "Director": "Joseph Green",
         "Studio / Distributor": "American International Pictures",
-        "Movie Poster": "URL",
-        "Movie Description": "N/A", 
-        "List of Main Cast": "N/A",
-        "Genre":
+        "Movie Poster": "images/brainthatwouldntdie.jpg",
+        "Movie Description": "A doctor experimenting with transplant techniques keeps his girlfriend's head alive when she is decapitated in a car crash, then goes hunting for a new body.", 
+        "List of Main Cast": ["Jason Evers", "Virginia Leith", "Anthony La Penna"],
+        "Genre": ["Horror", "Sci-fi"]
     }, 
     { 
         "Film Title": "It's a Wonderful Life",
         "Release Year": "1946",
         "Director":  "Frank Capra",
         "Studio / Distributor": "Liberty Films, RKO Pictures",
-        "Movie Poster": "URL",
-        "Movie Description": "N/A", 
-        "List of Main Cast": "N/A",
-        "Genre":
+        "Movie Poster": "images/wonderful_life.jpg",
+        "Movie Description": "An angel is sent from Heaven to help a desperately frustrated businessman see the value of his own life.", 
+        "List of Main Cast": ["James Stewart", "Donna Reed", "Lionel Barrymore"],
+        "Genre": ["Fantasy", "Comedy"]
     }, 
     { 
         "Film Title": "The Little Princess",
         "Release Year": "1939",
         "Director": "Walter Lang",
         "Studio / Distributor": "20th Century Fox",
-        "Movie Poster": "URL",
-        "Movie Description": "N/A", 
-        "List of Main Cast": "N/A",
-        "Genre":
+        "Movie Poster": "images/little_princess.jpg",
+        "Movie Description": "Sara is sent to a strict boarding school after her father enlists in WWI. When he is presumed dead, the headmistress, knowing she will not receive any more money, forces the girl to become a servant.", 
+        "List of Main Cast": ["Liesel Matthews", "Richard LaGravenese", "Elizabeth Chandler"],
+        "Genre": ["Family", "Fantasy"]
     }, 
     { 
         "Film Title": "The Man with the Golden Arm",
         "Release Year":  "1955",
         "Director": "Otto Preminge",
         "Studio / Distributor": "United Artists",
-        "Movie Poster": "URL",
-        "Movie Description": "N/A", 
-        "List of Main Cast": "N/A",
-        "Genre":
+        "Movie Poster": "images/man_golden_arm.jpg",
+        "Movie Description": "When illegal card dealer and recovering heroin addict Frankie Machine gets out of prison, he decides to straighten up. Armed with nothing but an old drum set, Frankie tries to get honest work as a drummer. But when his former employer and old drug dealer re-enter his life, Frankie finds it hard to stay clean and eventually finds himself succumbing to his old habits.", 
+        "List of Main Cast": ["Frank Sinatra", "Lewis Meltzer", "Nelson Algren"],
+        "Genre": ["Thriller", "Noir"]
     }, 
     { 
         "Film Title": "Night of the Living Dead",
         "Release Year": "1968",
         "Director": "George A. Romero",
         "Studio / Distributor": "Walter Reade",
-        "Movie Poster": "URL",
-        "Movie Description": "N/A", 
-        "List of Main Cast": "N/A",
-        "Genre":
+        "Movie Poster": "images/living_dead.jpg",
+        "Movie Description": "A disparate group of individuals takes refuge in an abandoned house when corpses begin to leave the graveyard in search of fresh human bodies to devour. The pragmatic Ben does his best to control the situation, but when the re-animated bodies surround the house, the other survivors begin to panic. As any semblance of order within the group begins to dissipate, the zombies start to find ways inside. One by one, the living humans become the prey of the deceased ones.", 
+        "List of Main Cast": ["Duane Jones", "Judith O'Dea", "Karl Hardman"],
+        "Genre": ["Horror", "Sci-fi"]
     }, 
     { 
         "Film Title": "Royal Wedding",
         "Release Year":  "1951",
         "Director":  "Stanley Donen",
         "Studio / Distributor": "MGM",
-        "Movie Poster": "URL",
-        "Movie Description": "N/A", 
-        "List of Main Cast": "N/A",
-        "Genre":
+        "Movie Poster": "images/Royal_Wedding.jpg",
+        "Movie Description": "A brother and sister dance act encounter challenges and romance when booked in London during the Royal Wedding.", 
+        "List of Main Cast": ["Fred Astaire", "Jane Powell", "Peter Lawford"],
+        "Genre": ["Musical", "Comedy"]
     }, 
     { 
         "Film Title":  "A Star Is Born",
@@ -97,6 +97,6 @@
         "Movie Poster": "images/star_born_poster.jpg",
         "Movie Description": "When a young actress arrives in Hollywood with hopes of stardom, a chance encounter places her under the wing of older actor Norman Maine. Adopting the stage name Vicki Lester, she co-stars with Norman in a major motion picture, but his success is clearly fading even as her career begins. After the couple wed, Vicki's fame continues to grow, but Norman descends into alcoholism, and she must decide between pursuing her dream and caring for him.", 
         "List of Main Cast": ["Janet Gaynor", "Fredric March", "Adolphe Menjou", "Lionel Stander"],
-        "Genre": "Romance/Drama"
+        "Genre": ["Romance", "Drama"]
     }, 
 ]
