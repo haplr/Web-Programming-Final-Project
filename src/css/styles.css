@@ -24,3 +24,17 @@
 .hidden {
     visibility: hidden;   
    }
+
+
+/*homepage (index.html)*/
+.home-page { background-color: black; font-family: 'Tahoma', sans-serif; }
+.home-page nav a { color: white; text-decoration: none; }
+.home-page h2 { font-family: "Roboto", Tahoma, sans-serif; }
+.home-page p { font-family: "Roboto", Tahoma, sans-serif; }
+.home-page #trending { background-color: lightgray; }
+.home-page #actor-panel { background-color: gray; }
+.home-page #watchlist { background-color: darkgray; }
+.home-page .movie-list { display: flex; gap: 12px; overflow-x: auto; }
+.home-page .movie-card { border: 1px solid black; width: 120px; flex-shrink: 0; }
+.home-page .movie-card img { width: 100%; height: 170px; object-fit: cover; }
+/*end*/
