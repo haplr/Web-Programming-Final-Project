@@ -1,3 +1,4 @@
+// fetching data from JSON
 async function getMovies() {
     const response = await fetch("data/movie.json");
     const movies = await response.json();
@@ -5,6 +6,7 @@ async function getMovies() {
     return movies;
 }
 
+// creating the HTML structure for data (movies)
 async function createItemCard({title, year, director, studio, posterURL, description, cast, genre}) {
     const film = document.createElement("tr");
 
@@ -60,6 +62,8 @@ async function createItemCard({title, year, director, studio, posterURL, descrip
     return film;
 }
 
+// add the data to the container
+// -> show movies on the website
 async function createItems() {    
     const movies = await getMovies();
 
