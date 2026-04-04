@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Register</title>
 
     <script type="module">
-        import register from "./js/login.js";
-
-
-        document.querySelector("button").addEventListner("click", ()=>register());
+        import setup from "./js/register.js";
+        setup();
     </script>
 </head>
 <body>
@@ -18,25 +17,26 @@
 
         <section>
             <h2>Register</h2>
-            <form>
-                <div>
-                    <label for="email">Email Address</label>
-                    <input id="email" type="text" name="email" />
-                </div>
-                <div>
+            <div>
+                <form class="form-error hidden" id="error-message">
+                    Invalid Username or Password
+                </form>
+                <form class="no-submit">
                     <label for="username">Username</label>
                     <input id="username" type="text" name="username" />
-                </div>
+                </form class="no-submit">
+                <form class="no-submit">
                     <label for="password">Password</label>
                     <input id="password" type="password" name="password" />
-                <div>
+                </form>
+                <form class="no-submit">
                     <label for="reenter-password">Reenter Password</label>
-                    <input type="password" name="reenter-password" />
-                </div>
-            </form>
+                    <input id="confirm-password" type="password" name="reenter-password" />
+                </form>
+                <button type="button" id="register">Register Account</button>
+            </div>
 
             <p>Already Registered? <a href="./login.html">sign in</a></p>
-            <button>Register Account</button>
         </section>
 
     </main>

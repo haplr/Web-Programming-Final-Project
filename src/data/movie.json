@@ -1,5 +1,6 @@
 [ 
     { 
+        "id": 0,
         "title": "Aladdin and His Wonderful Lamp",
         "year": 1939,
         "director": "Dave Fleischer",
@@ -10,6 +11,7 @@
         "genre": ["Family", "Adventure"]
     }, 
     { 
+        "id": 1,
         "title": "Angel and the Badman",
         "year": 1947,
         "director": "James Edward Grant",
@@ -20,6 +22,7 @@
         "genre": ["Western", "Romance"]
     }, 
     { 
+        "id": 2,
         "title": "The Bat",
         "year": 1959,
         "director": "Crane Wilbur",
@@ -30,6 +33,7 @@
         "genre": ["Horror", "Mystery"]
     }, 
     { 
+        "id": 3,
         "title": "The Brain That Wouldn't Die",
         "year": 1962,
         "director": "Joseph Green",
@@ -40,6 +44,7 @@
         "genre": ["Horror", "Sci-fi"]
     }, 
     { 
+        "id": 4,
         "title": "It's a Wonderful Life",
         "year": 1946,
         "director":  "Frank Capra",
@@ -50,6 +55,7 @@
         "genre": ["Fantasy", "Comedy"]
     }, 
     { 
+        "id": 5,
         "title": "The Little Princess",
         "year": 1939,
         "director": "Walter Lang",
@@ -60,6 +66,7 @@
         "genre": ["Family", "Fantasy"]
     }, 
     { 
+        "id": 6,
         "title": "The Man with the Golden Arm",
         "year":  1955,
         "director": "Otto Preminge",
@@ -70,6 +77,7 @@
         "genre": ["Thriller", "Noir"]
     }, 
     { 
+        "id": 7,
         "title": "Night of the Living Dead",
         "year": 1968,
         "director": "George A. Romero",
@@ -80,6 +88,7 @@
         "genre": ["Horror", "Sci-fi"]
     }, 
     { 
+        "id": 8,
         "title": "Royal Wedding",
         "year": 1951,
         "director":  "Stanley Donen",
@@ -90,6 +99,7 @@
         "genre": ["Musical", "Comedy"]
     }, 
     { 
+        "id": 9,
         "title":  "A Star Is Born",
         "year": 1937,
         "director":  "William A. Wellman",

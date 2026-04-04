@@ -8,7 +8,6 @@
 
     <script type="module">
         import setup from './js/login.js'
-
         setup();
     </script>
 </head>
@@ -18,22 +17,22 @@
 
         <section>
             <h2>Sign in</h2>
-            <form>
-                <div class="form-error hidden" id="error-message">
+            <div>
+                <form class="no-submit form-error hidden" id="error-message">
                     <p>Invalid Username or Password</p>
-                </div>
-                <div class="form-element">
+                </form>
+                <form class="no-submit form-element">
                     <label class="form-label" for="username">Username</label>
                     <input class="form-text" type="text" name="username" id="username" />
-                </div>
-                <div class="form-element">
+                </form>
+                <form class="no-submit form-element">
                     <label class="form-label" for="password">Password</label>
                     <input class="form-text" type="password" name="password" id="password" />
-                </div>
-                <div class="form-element">
-                    <button class="login-button" type="button" id="login">Login</button>
-                </div>
-            </form>
+                </form>
+                <form class="no-submit form-element">
+                    <button id="login" type="button">Login</button>
+                </form>
+            </div>
 
             <p>Not Registered? <a href="./register.html">Register Here</a></p>
         </section>

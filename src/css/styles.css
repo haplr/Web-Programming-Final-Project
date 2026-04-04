@@ -22,8 +22,8 @@
 }
 
 .hidden {
-    visibility: hidden;   
-   }
+    display: none;   
+}
 
 
 /*homepage (index.html)*/
