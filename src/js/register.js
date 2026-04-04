@@ -1,11 +1,15 @@
 let debounce;
 
+// Fetch and return users account data from account.json file
 async function getUsers() {
     const response = await fetch("data/account.json");
     const users = await response.json();
     return users;
 }
 
+// Checks if the user and password is valid
+// if so the user is brought to the login page
+// otherwise they are briefly shown a error for 3 seconds.
 async function register(inputUsername, inputPassword, inputConfirmedPassword, errorDiv) {
     clearTimeout(debounce);
 
@@ -17,13 +21,14 @@ async function register(inputUsername, inputPassword, inputConfirmedPassword, er
 
     const users = await getUsers();
 
-
-
     // TODO: Add registration info to database
 
     window.location.href = "login.html";
 }
 
+// Return whether or not the username is vaild
+// Validity is based on whether the username isn't in the account.json file and isn't blank
+// If it is not valid the errorDiv text is updated
 async function valid_username(inputUsername, errorDiv) {
     if(inputUsername === "") {
         errorDiv.textContent = "Please enter a username.";
@@ -40,6 +45,9 @@ async function valid_username(inputUsername, errorDiv) {
     return true;
 }
 
+// Return whether or not the password is vaild
+// Validity is based on whether the password and confirmPassword match and isn't blank
+// If it is not valid the errorDiv text is updated
 function valid_password(inputPassword, inputConfirmedPassword, errorDiv) {
     if(inputPassword === "") {
         errorDiv.textContent = "Please enter a password.";
@@ -54,6 +62,7 @@ function valid_password(inputPassword, inputConfirmedPassword, errorDiv) {
     return true;
 }
 
+// Setup function for the register page
 const setup = () => {
     const button = document.querySelector("#register");
     const username = document.querySelector("#username");
