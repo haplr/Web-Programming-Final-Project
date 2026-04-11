@@ -1,78 +1,83 @@
-// fetching data from JSON
-async function getMovies() {
-    const response = await fetch("data/movie.json");
-    const movies = await response.json();
-    
-    return movies;
-}
+class App {
+    constructor() {
+        this.createItems();
+    }
 
-// creating the HTML structure for data (movies)
-async function createItemCard({title, year, director, studio, posterURL, description, cast, genre}) {
-    const film = document.createElement("tr");
+    // add the data to the container
+    // -> show movies on the website
+    async createItems() {    
+        const movies = await this.getMovies();
+        const container = document.querySelector("#container");
 
-    const film_title = document.createElement("td");
-    film_title.classList.add("film-name");
-    film_title.textContent = title;
+        for (const movie of movies) {
+            const card = await this.createItemCard(movie);
+            container.appendChild(card);
+        }
+    }
 
-    const release_year = document.createElement("td");
-    release_year.classList.add("release_year");
-    release_year.textContent = year;
-    
-    const film_director = document.createElement("td");
-    film_director.classList.add("director");
-    film_director.textContent = director;
-    
-    const film_studio = document.createElement("td");
-    film_studio.classList.add("studio-distributor");
-    film_studio.textContent = studio;
+    // creating the HTML structure for data (movies)
+    async createItemCard({title, year, director, studio, posterURL, description, cast, genre}) {
+        const film = document.createElement("tr");
 
-    const poster = document.createElement("td");
-    const image = document.createElement("img");
-    image.classList.add("poster");
-    image.src = posterURL;
-    poster.appendChild(image);
+        const film_title = document.createElement("td");
+        film_title.classList.add("film-name");
+        film_title.textContent = title;
 
-    const film_info = document.createElement("td");
-    // const p_info = document.createElement("p");
-    // p_info.classList.add("film-info");
-    // p_info.textContent = description;
-    // film_info.appendChild(p_info);
-    film_info.textContent = description;
+        const release_year = document.createElement("td");
+        release_year.classList.add("release_year");
+        release_year.textContent = year;
+        
+        const film_director = document.createElement("td");
+        film_director.classList.add("director");
+        film_director.textContent = director;
+        
+        const film_studio = document.createElement("td");
+        film_studio.classList.add("studio-distributor");
+        film_studio.textContent = studio;
 
-    const main_casts = document.createElement("td");
-    // const castList = document.createElement("p");
-    // const castText = cast.join(", ");
-    // castList.textContent = castText;
-    // main_casts.appendChild(castList);
-    main_casts.textContent = cast.join(", ");
+        const poster = document.createElement("td");
+        const image = document.createElement("img");
+        image.classList.add("poster");
+        image.src = posterURL;
+        poster.appendChild(image);
 
-    const genres = document.createElement("td");
-    // const genreList = document.createElement("p");
-    // const genreText = genre.join(", ");
-    // genreList.textContent = genreText;
-    // genres.appendChild(genreList);
-    genres.textContent = genre.join(", ");
-    
-    film.append(film_title, release_year, film_director, film_studio, film_info, main_casts, genres);
-    // when user click on movie
-    // button.addEventListener('click', () => {
-    //     alert(`Thank you for your interest in the ${name}. Unfortunately, the cart is unavailable at this time.`)
-    // });
+        const film_info = document.createElement("td");
+        // const p_info = document.createElement("p");
+        // p_info.classList.add("film-info");
+        // p_info.textContent = description;
+        // film_info.appendChild(p_info);
+        film_info.textContent = description;
 
-    return film;
-}
+        const main_casts = document.createElement("td");
+        // const castList = document.createElement("p");
+        // const castText = cast.join(", ");
+        // castList.textContent = castText;
+        // main_casts.appendChild(castList);
+        main_casts.textContent = cast.join(", ");
 
-// add the data to the container
-// -> show movies on the website
-async function createItems() {    
-    const movies = await getMovies();
+        const genres = document.createElement("td");
+        // const genreList = document.createElement("p");
+        // const genreText = genre.join(", ");
+        // genreList.textContent = genreText;
+        // genres.appendChild(genreList);
+        genres.textContent = genre.join(", ");
+        
+        film.append(film_title, release_year, film_director, film_studio, film_info, main_casts, genres);
+        // when user click on movie
+        // button.addEventListener('click', () => {
+        //     alert(`Thank you for your interest in the ${name}. Unfortunately, the cart is unavailable at this time.`)
+        // });
 
-    const container = document.querySelector("#container");
+        return film;
+    }
 
-    for (const movie of movies) {
-        const card = await createItemCard(movie);
-        container.appendChild(card);
+    // fetching data from JSON
+    async getMovies() {
+        const response = await fetch("data/movie.json");
+        const movies = await response.json();
+        
+        return movies;
     }
 }
 
-export default createItems;
+export default App;
