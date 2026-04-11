@@ -7,8 +7,8 @@
     <title>Register</title>
 
     <script type="module">
-        import setup from "./js/register.js";
-        setup();
+        import App from "./js/register.js";
+        new App();
     </script>
 </head>
 <body>
@@ -17,24 +17,28 @@
 
         <section>
             <h2>Register</h2>
-            <div>
-                <form class="form-error hidden" id="error-message">
-                    Invalid Username or Password
-                </form>
-                <form class="no-submit">
+            <form id="register">
+                <div class="form-error hidden" id="error-message">Invalid Username or Password</div>
+                
+                <div class="form-element">
                     <label for="username">Username</label>
                     <input id="username" type="text" name="username" />
-                </form class="no-submit">
-                <form class="no-submit">
+                </div>
+                
+                <div class="form-element">
                     <label for="password">Password</label>
                     <input id="password" type="password" name="password" />
-                </form>
-                <form class="no-submit">
+                </div>
+            
+                <div class="form-element">
                     <label for="reenter-password">Reenter Password</label>
                     <input id="confirm-password" type="password" name="reenter-password" />
-                </form>
-                <button type="button" id="register">Register Account</button>
-            </div>
+                </div>
+            
+                <div class="form-element">
+                    <button type="submit" class="register-button">Register Account</button>
+                </div>
+            </form>
 
             <p>Already Registered? <a href="./login.html">sign in</a></p>
         </section>

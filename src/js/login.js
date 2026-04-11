@@ -1,7 +1,6 @@
 class App {
-    // Setup function for the login page.
+    // Setup constructor for the login page.
     constructor() {
-        const button = document.querySelector(".login-button");
         const username = document.querySelector("#username");
         const password = document.querySelector("#password");
         this.errorDiv = document.querySelector("#error-message");
