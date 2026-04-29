@@ -1,76 +1,78 @@
 class App {
-    // Setup constructor for the register page
-    constructor() {
-        const username = document.querySelector("#username");
-        const password = document.querySelector("#password");
-        const confirm_password = document.querySelector("#confirm-password");
-        this.errorDiv = document.querySelector("#error-message");
-        this.debounce;
+    constructor(){
+        this.firstNameInput = document.getElementById('first-name');
+        this.lastNameInput = document.getElementById('last-name');
+        this.usernameInput = document.getElementById('username');
+        this.passwordInput = document.getElementById('password');
+        this.confirmPasswordInput = document.getElementById('confirm-password');
+        this.errorDiv = document.getElementById('error-message');
 
-        document.querySelector("#register").addEventListener("submit", e=>this.register(e, username.value, password.value, confirm_password.value));
+        this.register = this.register.bind(this);
+
+        document.querySelector('#login').addEventListener('submit', this.register);
     }
 
-    // Checks if the user and password is valid
-    // if so the user is brought to the login page
-    // otherwise they are briefly shown a error for 3 seconds.
-    async register(e, inputUsername, inputPassword, inputConfirmedPassword) {
-        e.preventDefault();
-        clearTimeout(this.debounce);
+    async register(event){
+        event.preventDefault();
 
-        if(!await this.valid_username(inputUsername) || !this.valid_password(inputPassword, inputConfirmedPassword)) {
-            this.errorDiv.classList.remove("hidden");
-            this.debounce = setTimeout(() => {this.errorDiv.classList.add("hidden")}, 3000);
+        if(!this.firstNameInput.value) { // if the first name text input's value is "" (the user didn't enter a first name)
+            this.showError("Please enter your first name");
             return;
         }
 
-        const users = await this.getUsers();
+        if(!this.lastNameInput.value) { // if the last name text input's value is "" (the user didn't enter a last name)
+            this.showError("Please enter your last name");
+            return;
+        }
 
-        // TODO: Add registration info to database
+        if(!this.usernameInput.value) { // if the username text input's value is "" (the user didn't enter a username)
+            this.showError("Please enter a username");
+            return;
+        }
 
-        window.location.href = "login.html";
+        if(!this.passwordInput.value) { // if the password text input's value is "" (the user didn't enter a password)
+            this.showError("Please enter a password");
+            return;
+        }
+
+        if(this.passwordInput.value != this.confirmPasswordInput.value) { // if the passwords do not match
+            this.showError("Passwords don't match");
+            return;
+        }
+
+
+        // if inputs are valid and we didn't return, then create a credentials object to send to the server
+        const credentials = {
+            username: this.usernameInput.value,
+            password: this.passwordInput.value,
+            firstName: this.firstNameInput.value,
+            lastName: this.lastNameInput.value
+        }
+        
+        // send the credentials to the server and await the response 
+        const response = await fetch('/register', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(credentials)
+        });
+
+        // await the body of the response (see the /register route in server.js)
+        const auth = await response.json();
+
+        // if the server responded with { success: true, message: "..." }, then the new user was created
+        if (auth.success){
+            window.location.href = 'login.html'; // update the page to login.html
+        }
+        else { // otherwise
+            this.showError(auth.message); // show the error message div with the message received from the server
+        }
     }
 
-    // Return whether or not the username is vaild
-    // Validity is based on whether the username isn't in the account.json file and isn't blank
-    // If it is not valid the errorDiv text is updated
-    async valid_username(inputUsername) {
-        if(inputUsername === "") {
-            this.errorDiv.textContent = "Please enter a username.";
-            return false;
-        }
-
-        for(const user of await this.getUsers()) {
-            if(inputUsername === user.username) {
-                this.errorDiv.textContent = "Username already exists.";
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    // Return whether or not the password is vaild
-    // Validity is based on whether the password and confirmPassword match and isn't blank
-    // If it is not valid the errorDiv text is updated
-    valid_password(inputPassword, inputConfirmedPassword) {
-        if(inputPassword === "") {
-            this.errorDiv.textContent = "Please enter a password.";
-            return false;
-        }
-
-        if(inputPassword !== inputConfirmedPassword) {
-            this.errorDiv.textContent = "Passwords do not match";
-            return false;
-        }
-
-        return true;
-    }
-
-    // Fetch and return users account data from account.json file
-    async getUsers() {
-        const response = await fetch("data/account.json");
-        const users = await response.json();
-        return users;
+    showError(message){
+        this.errorDiv.textContent = message;
+        this.errorDiv.classList.remove('hidden');
     }
 }
 
