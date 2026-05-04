@@ -7,14 +7,6 @@
     --font: Verdana, sans-serif;
 }
 
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
 body {
     font-family: var(--font);
     background-color: var(--color-ink-black);
@@ -162,6 +154,22 @@ body {
 .account-button:hover {
     background-color: var(--color-gold);
     color: var(--color-prussian-blue);
+}
+/*end*/
+
+/*person-info*/
+#people-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+/*end*/
+
+/*movie-info*/
+#people-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
 }
 /*end*/
 
