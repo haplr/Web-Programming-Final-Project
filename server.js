@@ -1,6 +1,8 @@
 import express from 'express';
 import fs from 'fs';
 import credentials from './data/credentials.json' with { type: 'json' };
+import movie_data from './data/movie.json' with { type: 'json' };
+import people_data from './data/people.json' with { type: 'json' };
 
 const app = express();
 
@@ -61,8 +63,6 @@ app.get('/user', function(req, res){
         firstName: currentUser.firstName,
         lastName: currentUser.lastName
     }); // send the firstname and lastname of the currently logged in user
-    
-    
 });
 
 app.listen(3000, function(err){
