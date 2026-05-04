@@ -42,23 +42,18 @@ body {
 /* End */
 
 /* Login Page */
-#login-page {
+.login-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#login-page main {
+.login-wrapper > div {
     display: flex;
     flex-flow: column;
     align-items: center;
-}
 
-#login-page section {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    
     padding: 0 15px;
     background-color: var(--color-prussian-blue);
     border-radius: 15px;
@@ -67,7 +62,6 @@ body {
 #login {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     gap: 15px;
 }
 
@@ -83,29 +77,6 @@ body {
 /*end*/
 
 /* Register Page */
-#register-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font);
-}
-
-#register-page main {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-#register-page section {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    
-    padding: 0 15px;
-    background-color: var(--color-prussian-blue);
-    border-radius: 15px;
-}
-
 #register {
     display: flex;
     flex-direction: column;
