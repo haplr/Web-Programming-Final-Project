@@ -12,7 +12,8 @@
         let user = localStorage.getItem("user");
         
         if(user != null) {
-            document.querySelector("#account-name").textContent = `${user}'s Account`;
+            console.log(user);
+            document.querySelector("h1").textContent = `Welcome to ${user} WatchList`;
         } else {
             window.location.href = "login.html"
         }
