@@ -1,72 +1,233 @@
 [
     {
-        "Person Name": "Janet Gaynor",
-        "Date of Birth": "October 6, 1906",
-        "Bio": "Janet Gaynor was born Laura Gainor on October 6, 1906, in Philadelphia, Pennsylvania. As a child, she & her parents moved to San Francisco, California, where she graduated from high school in 1923. She then moved to Los Angeles where she enrolled in a secretarial school. She got a job at a shoe store for the princely sum of $18 per week. However, since L.A. was the land of stars and studios, she wanted to try her hand at acting. She managed to land unbilled bit parts in several feature films and comedy shorts. She bided her time, believing "Good things come to those who wait." She didn't have to wait too long, either. In 1926, at the age of 20, she turned in a superb performance as Anna Burger in The Johnstown Flood (1926). The Hollywood moguls knew they had a top star on their hands and cast her in several other leading roles that year, including The Shamrock Handicap (1926), The Blue Eagle (1926), The Midnight Kiss (1926) and The Return of Peter Grimm (1926). The next year she turned in acclaimed performances in two classic films, 7th Heaven (1927) and Sunrise (1927). Based on the strength of those two films plus Street Angel (1928), Janet received the very first Academy Award for best actress. This was the first and only time an actress won the Oscar for multiple roles. When "talkies" replaced silent films, Janet was one of the few who made a successful transition, not only because of her great acting ability but for her charming voice as well. Without a doubt, Janet had already lived a true rags-to-riches story. Throughout the mid-1930s she was the top drawing star at theaters. She turned in grand performances in several otherwise undistinguished films. Then came A Star Is Born (1937). She was very convincing as Vicki Lester (aka Esther Blodgett), struggling actress trying for the big time. Told by the receptionist at Central casting 'You know what your chances are? One in a hundred thousand,'' Esther/Vicki replies, 'But maybe--I'm that one.' For her outstanding performance she was nominated for another Oscar, but lost to Luise Rainer's performance in The Good Earth (1937), her second in as many tries. After appearing in The Young in Heart (1938), Janet didn't appear in another film until 1957's Bernardine (1957). Her last performance was in a Broadway version of Harold and Maude. Although the play was a flop, Janet's performance salvaged it to any degree - she still had what it took to entertain the public. On September 14, 1984, Janet passed away from pneumonia in Palm Springs, California, at the age of 77",
-        "Movies (starred or directed)": ["A Star Is Born", "Sunny Side Up"],
-        "Roles in Movies": ["Esther Victoria Blodgett", "Molly Carr"]
+        "name": "Janet Gaynor",
+        "dateOfBirth": "October 6, 1906",
+        "bio": "Janet Gaynor was born Laura Gainor on October 6, 1906, in Philadelphia, Pennsylvania. She managed to land bit parts in several early films before turning in acclaimed performances in 7th Heaven and Sunrise. Based on those films plus Street Angel, Janet received the very first Academy Award for Best Actress in 1929. When talkies replaced silent films, Janet was one of the few who made a successful transition. She received another Oscar nomination for A Star Is Born in 1937. She passed away on September 14, 1984, in Palm Springs, California, at the age of 77.",
+        "movies": ["A Star Is Born", "Sunny Side Up"],
+        "roles": ["Esther Victoria Blodgett", "Molly Carr"]
     },
     {
-        "Person Name": "Fredric March",
-        "Date of Birth": ,
-        "Bio": ,
-        "Movies (starred or directed)": [],
-        "Roles in Movies": []
+        "name": "Fredric March",
+        "dateOfBirth": "August 31, 1897",
+        "bio": "Fredric March was born Ernest Frederick McIntyre Bickel on August 31, 1897, in Racine, Wisconsin. He is one of the few actors to have won two Academy Awards for Best Actor, taking home the prize for Dr. Jekyll and Mr. Hyde in 1932 and The Best Years of Our Lives in 1947. Known for his versatility across drama, comedy, and tragedy, March had a long and distinguished career on both stage and screen. He passed away on April 14, 1975, in Los Angeles, California.",
+        "movies": ["A Star Is Born", "Dr. Jekyll and Mr. Hyde", "The Best Years of Our Lives"],
+        "roles": ["Norman Maine"]
     },
     {
-        "Person Name": "Adolphe Menjou",
-        "Date of Birth": ,
-        "Bio": ,
-        "Movies (starred or directed)": [],
-        "Roles in Movies": []
+        "name": "John Wayne",
+        "dateOfBirth": "May 26, 1907",
+        "bio": "John Wayne was born Marion Robert Morrison on May 26, 1907, in Winterset, Iowa. One of the most iconic figures in Hollywood history, Wayne became synonymous with the American Western genre. He appeared in over 170 films across a career spanning five decades. He won the Academy Award for Best Actor for True Grit in 1969. Known for his distinctive voice, walk, and screen presence, Wayne remains one of the top box office draws in film history. He passed away on June 11, 1979, in Los Angeles, California.",
+        "movies": ["Angel and the Badman", "Stagecoach", "True Grit", "The Searchers"],
+        "roles": ["Quirt Evans"]
     },
     {
-        "Person Name": "Lionel Stander",
-        "Date of Birth": ,
-        "Bio": ,
-        "Movies (starred or directed)": [],
-        "Roles in Movies": []
+        "name": "Vincent Price",
+        "dateOfBirth": "May 27, 1911",
+        "bio": "Vincent Price was born on May 27, 1911, in St. Louis, Missouri. Regarded as one of the great icons of horror cinema, Price built a career playing sinister, theatrical villains with a distinctive voice and commanding screen presence. He appeared in numerous classic horror films including House of Wax, The Fly, and a long series of Edgar Allan Poe adaptations for director Roger Corman. Beyond horror, he was also a noted art collector and cookbook author. He passed away on October 25, 1993, in Los Angeles, California.",
+        "movies": ["The Bat", "House of Wax", "The Fly", "The Abominable Dr. Phibes"],
+        "roles": ["Dr. Malcolm Wells"]
     },
     {
-        "Person Name": ,
-        "Date of Birth": ,
-        "Bio": ,
-        "Movies (starred or directed)": [],
-        "Roles in Movies": []
+        "name": "James Stewart",
+        "dateOfBirth": "May 20, 1908",
+        "bio": "James Stewart was born on May 20, 1908, in Indiana, Pennsylvania. One of the most beloved actors in Hollywood history, Stewart was known for his natural, everyman acting style and distinctive drawl. He won the Academy Award for Best Actor for The Philadelphia Story in 1940 and received an honorary Oscar in 1985. He starred in many classic films including Mr. Smith Goes to Washington, Rear Window, Vertigo, and It's a Wonderful Life. He served as a bomber pilot in World War II, rising to the rank of Brigadier General. He passed away on July 2, 1997, in Beverly Hills, California.",
+        "movies": ["It's a Wonderful Life", "Rear Window", "Vertigo", "Mr. Smith Goes to Washington"],
+        "roles": ["George Bailey"]
     },
     {
-        "Person Name": ,
-        "Date of Birth": ,
-        "Bio": ,
-        "Movies (starred or directed)": [],
-        "Roles in Movies": []
+        "name": "Frank Sinatra",
+        "dateOfBirth": "December 12, 1915",
+        "bio": "Frank Sinatra was born Francis Albert Sinatra on December 12, 1915, in Hoboken, New Jersey. Regarded as one of the greatest entertainers of the 20th century, Sinatra had a legendary career as both a singer and an actor. He won the Academy Award for Best Supporting Actor for From Here to Eternity in 1953. As an actor he was known for taking on gritty, complex roles, most notably in The Man with the Golden Arm, for which he received a Best Actor nomination. As a singer, his recordings with Capitol Records in the 1950s are considered some of the finest vocal performances in popular music history. He passed away on May 14, 1998, in Los Angeles, California.",
+        "movies": ["The Man with the Golden Arm", "From Here to Eternity", "The Manchurian Candidate"],
+        "roles": ["Frankie Machine"]
     },
     {
-        "Person Name": ,
-        "Date of Birth": ,
-        "Bio": ,
-        "Movies (starred or directed)": [],
-        "Roles in Movies": []
+        "name": "Fred Astaire",
+        "dateOfBirth": "May 10, 1899",
+        "bio": "Fred Astaire was born Frederick Austerlitz on May 10, 1899, in Omaha, Nebraska. Widely considered the greatest dancer in the history of film, Astaire revolutionized the movie musical with his athletic, elegant style and his insistence on filming dance numbers in single, uncut takes. He partnered most famously with Ginger Rogers across ten films at RKO Pictures. He received an honorary Academy Award in 1950 and a nomination for Best Supporting Actor for The Towering Inferno in 1975. He passed away on June 22, 1987, in Los Angeles, California.",
+        "movies": ["Royal Wedding", "Top Hat", "Swing Time", "Easter Parade"],
+        "roles": ["Tom Bowen"]
     },
     {
-        "Person Name": ,
-        "Date of Birth": ,
-        "Bio": ,
-        "Movies (starred or directed)": [],
-        "Roles in Movies": []
+        "name": "George A. Romero",
+        "dateOfBirth": "February 4, 1940",
+        "bio": "George Andrew Romero was born on February 4, 1940, in New York City. Romero is considered the father of the modern zombie film, having created the template for the genre with his landmark 1968 debut Night of the Living Dead, which he made independently on a shoestring budget in Pittsburgh. The film used its horror premise as sharp social commentary on race relations and civil unrest in America. He went on to direct Dawn of the Dead and Day of the Dead, cementing his legacy as one of the most influential genre filmmakers of all time. He passed away on July 16, 2017.",
+        "movies": ["Night of the Living Dead", "Dawn of the Dead", "Day of the Dead"],
+        "roles": ["Director"]
     },
     {
-        "Person Name": ,
-        "Date of Birth": ,
-        "Bio": ,
-        "Movies (starred or directed)": [],
-        "Roles in Movies": []
+        "name": "Adolphe Menjou",
+        "dateOfBirth": "February 18, 1890",
+        "bio": "Adolphe Menjou was born on February 18, 1890, in Pittsburgh, Pennsylvania. A polished and debonair character actor, Menjou was known for playing sophisticated, often cynical supporting roles across both silent and sound films. He received an Academy Award nomination for Best Actor for The Front Page in 1931. He appeared in over 100 films across a career spanning four decades. He passed away on October 29, 1963, in Beverly Hills, California.",
+        "movies": ["A Star Is Born", "The Front Page", "Morocco"],
+        "roles": ["Oliver Niles"]
     },
     {
-        "Person Name": ,
-        "Date of Birth": ,
-        "Bio": ,
-        "Movies (starred or directed)": [],
-        "Roles in Movies": []
+        "name": "Donna Reed",
+        "dateOfBirth": "January 27, 1921",
+        "bio": "Donna Reed was born Donna Belle Mullenger on January 27, 1921, in Denison, Iowa. She won the Academy Award for Best Supporting Actress for From Here to Eternity in 1953, playing against her wholesome image in a dramatic role. She is perhaps best remembered today for her role as Mary Hatch Bailey in It's a Wonderful Life alongside James Stewart. She later starred in her own long-running television series, The Donna Reed Show, from 1958 to 1966. She passed away on January 14, 1986, in Beverly Hills, California.",
+        "movies": ["It's a Wonderful Life", "From Here to Eternity"],
+        "roles": ["Mary Hatch Bailey"]
     },
+    {
+        "name": "Jack Mercer",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["Aladdin and His Wonderful Lamp"],
+        "roles": ["Popeye / Aladdin"]
+    },
+    {
+        "name": "Margie Hines",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["Aladdin and His Wonderful Lamp"],
+        "roles": ["Olive Oyl"]
+    },
+    {
+        "name": "Carl Meyer",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["Aladdin and His Wonderful Lamp"],
+        "roles": []
+    },
+    {
+        "name": "Arthur Boran",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["Aladdin and His Wonderful Lamp"],
+        "roles": []
+    },
+    {
+        "name": "Gail Russell",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["Angel and the Badman"],
+        "roles": ["Penelope Worth"]
+    },
+    {
+        "name": "Harry Carey",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["Angel and the Badman"],
+        "roles": []
+    },
+    {
+        "name": "Agnes Moorehead",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["The Bat"],
+        "roles": []
+    },
+    {
+        "name": "Gavin Gordon",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["The Bat"],
+        "roles": []
+    },
+    {
+        "name": "Jason Evers",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["The Brain That Wouldn't Die"],
+        "roles": []
+    },
+    {
+        "name": "Virginia Leith",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["The Brain That Wouldn't Die"],
+        "roles": []
+    },
+    {
+        "name": "Anthony La Penna",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["The Brain That Wouldn't Die"],
+        "roles": []
+    },
+    {
+        "name": "Lionel Barrymore",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["It's a Wonderful Life"],
+        "roles": []
+    },
+    {
+        "name": "Liesel Matthews",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["The Little Princess"],
+        "roles": []
+    },
+    {
+        "name": "Richard LaGravenese",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["The Little Princess"],
+        "roles": []
+    },
+    {
+        "name": "Elizabeth Chandler",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["The Little Princess"],
+        "roles": []
+    },
+    {
+        "name": "Lewis Meltzer",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["The Man with the Golden Arm"],
+        "roles": []
+    },
+    {
+        "name": "Nelson Algren",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["The Man with the Golden Arm"],
+        "roles": []
+    },
+    {
+        "name": "Duane Jones",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["Night of the Living Dead"],
+        "roles": ["Ben"]
+    },
+    {
+        "name": "Judith O'Dea",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["Night of the Living Dead"],
+        "roles": ["Barbra"]
+    },
+    {
+        "name": "Karl Hardman",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["Night of the Living Dead"],
+        "roles": []
+    },
+    {
+        "name": "Jane Powell",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["Royal Wedding"],
+        "roles": []
+    },
+    {
+        "name": "Peter Lawford",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["Royal Wedding"],
+        "roles": []
+    },
+    {
+        "name": "Lionel Stander",
+        "dateOfBirth": null,
+        "bio": null,
+        "movies": ["A Star Is Born"],
+        "roles": []
+    }
 ]
