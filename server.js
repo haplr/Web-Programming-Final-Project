@@ -6,6 +6,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.static('src', { index: 'login.html' })); // { index: 'login.html' } tells the server to respond to "GET /" with login.html 
+app.use('/data', express.static('data'));
 
 // handle user login by POST
 app.post('/login', function(req, res){
