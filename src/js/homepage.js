@@ -1,9 +1,15 @@
-fetch('/src/data/movie.json')
-  .then(res => res.json())
-  .then(movies => {
-    populateTrending(movies);
-    populateWatchlist(movies);
-  });
+
+Promise.all([
+  fetch('../data/movie.json').then(res => res.json()),
+  fetch('../data/people.json').then(res => res.json())
+])
+.then(([movies, people]) => {
+  populateTrending(movies);
+  populateWatchlist(movies);
+  populateActorPanel(people, movies);
+});
+
+/*movie population functions*/
 
 function populateTrending(movies) {
   const movie = movies[Math.floor(Math.random() * movies.length)];
@@ -48,8 +54,37 @@ function addToWatchlist(id) {
   if (!watchlist.includes(id)) {
     watchlist.push(id);
     localStorage.setItem('watchlist', JSON.stringify(watchlist));
-    alert('Added to watchlist!');
+    alert('Movie added to your watchlist!');
   } else {
-    alert('Already in your watchlist.');
+    alert('Sorry, this movie is already in your watchlist.');
   }
+}
+
+/*actor population functions*/
+
+function populateActorPanel(people, movies) {
+  const validPeople = people.filter(person => person.bio !== null);
+  const randomPerson = validPeople[Math.floor(Math.random() * validPeople.length)];
+
+  const panel = document.getElementById('actor-panel');
+
+  panel.innerHTML = `
+    <h2>${randomPerson.name}</h2>
+    <p>Born: ${randomPerson.dateOfBirth}</p>
+    <p>${randomPerson.bio}</p>
+    <h3>Movies & Shows</h3>
+    <ul>
+      ${buildMovieLinks(randomPerson.movies, movies)}
+    </ul>
+  `;
+}
+
+function buildMovieLinks(personMovies, allMovies) {
+  return personMovies.map(title => {
+    const match = allMovies.find(m => m.title === title);
+    if (match) {
+      return `<li><a href="movie-info.html?id=${match.id}">${title}</a></li>`;
+    }
+    return `<li>${title}</li>`;
+  }).join('');
 }
