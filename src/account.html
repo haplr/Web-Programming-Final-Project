@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Account</title>
+    <script>
+        let user = localStorage.getItem("user");
+        
+        if(user != null) {
+            document.querySelector("#account-name").textContent = `${user}'s Account`;
+        } else {
+            window.location.href = "login.html"
+        }
+    </script>
 </head>
 <body id="account-page">
     <main>
         <section id="account-title-wrapper">
-            <p><b>Your Account</b></p>
+            <p><b id="account-name">Your Account</b></p>
             <div>
                 <p>Followers ...</p>
                 <p>Follows ...</p>
