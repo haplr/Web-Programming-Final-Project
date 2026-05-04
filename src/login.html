@@ -1,40 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Login</title>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Login Page" />
 
-    <script type="module">
-        import App from './js/login.js'
-        new App();
-    </script>
-</head>
-<body id="login-page">
-    <main>
-        <h1>Welcome to IMDB</h1>
+        <link rel="stylesheet" href="./css/styles.css" />
 
-        <section>
-            <h2>Sign in</h2>
-            <div>
-                <form id="login" >
-                    <div class="form-error hidden" id="error-message">
-                        <p>Invalid Username or Password</p>
-                    </div>
+        <script type="module">
+            import App from './js/login.js';
 
+            const app = new App();
+        </script>
+    </head>
+    <body>
+        <div class="login-wrapper">
+            <main>
+                <form id="login">
+                    <p class="form-error hidden" id="error-message"></p>
                     <div class="form-element">
                         <label class="form-label" for="username">Username</label>
                         <input class="form-text" type="text" name="username" id="username" />
                     </div>
-
                     <div class="form-element">
                         <label class="form-label" for="password">Password</label>
                         <input class="form-text" type="password" name="password" id="password" />
                     </div>
-
                     <div class="form-element">
-                        <button class="login-button" type="submit">Login</button>
+                        <button class="login-button">Login</button>
                     </div>
                 </form>
             </div>
