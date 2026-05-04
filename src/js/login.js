@@ -40,9 +40,13 @@ class App {
         // await the body of the response
         const auth = await response.json();
 
+        console.log(auth);
+        
+
         // if the server responded with { success: true, message: "..." }, then the new user was created
         if (auth.success){
             window.location.href = 'account.html'; // update the page to account.html
+            localStorage.setItem("user", this.usernameInput.value)
         }
         else { // otherwise
             this.showError(auth.message); // show the error message div with the message received from the server

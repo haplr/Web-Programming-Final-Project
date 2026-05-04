@@ -54,9 +54,9 @@ app.post('/register', function(req, res){
     res.json({ success: true, message: "Registration successful."})
 })
 
-// GET the current user's first and last name
-app.get('/user', function(req, res){
-    const currentUser = credentials['testUser']; // hardcode the currently logged in user
+// POST to get the current user's first and last name
+app.post('/user', function(req, res){
+    const currentUser = credentials[req.body.username]; // hardcode the currently logged in user
 
     res.json({
         firstName: currentUser.firstName,
