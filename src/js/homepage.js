@@ -1,3 +1,5 @@
+let allMovies = [];
+let allPeople = [];
 
 Promise.all([
   fetch('/data/movie.json').then(res => res.json()),
@@ -87,4 +89,90 @@ function buildMovieLinks(personMovies, allMovies) {
     }
     return `<li>${title}</li>`;
   }).join('');
+}
+
+const searchInput = document.getElementById('search');
+const searchForm = document.getElementById('search-container');
+const navbar = document.querySelector('.navbar');
+
+const dropdown = document.createElement('div');
+dropdown.id = 'search-dropdown';
+searchForm.appendChild(dropdown);
+
+Promise.all([
+  fetch('../data/movie.json').then(res => res.json()),
+  fetch('../data/people.json').then(res => res.json())
+])
+.then(([movies, people]) => {
+  allMovies = movies;
+  allPeople = people;
+});
+
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.trim().toLowerCase();
+
+  if (query.length === 0) {
+    dropdown.innerHTML = '';
+    dropdown.style.display = 'none';
+    return;
+  }
+
+  const movieResults = allMovies.filter(movie =>
+    movie.title.toLowerCase().includes(query)
+  );
+
+  const peopleResults = allPeople.filter(person =>
+    person.name && person.name.toLowerCase().includes(query)
+  );
+
+  displayDropdown(movieResults, peopleResults);
+});
+
+searchForm.addEventListener('submit', event => {
+  event.preventDefault();
+});
+
+document.addEventListener('click', event => {
+  if (!navbar.contains(event.target)) {
+    dropdown.innerHTML = '';
+    dropdown.style.display = 'none';
+  }
+});
+
+function displayDropdown(movieResults, peopleResults) {
+  dropdown.innerHTML = '';
+
+  if (movieResults.length === 0 && peopleResults.length === 0) {
+    dropdown.innerHTML = '<div class="dropdown-item">Sorry, No results found!</div>';
+    dropdown.style.display = 'block';
+    return;
+  }
+
+  movieResults.forEach(movie => {
+    const item = document.createElement('div');
+    item.className = 'dropdown-item';
+    item.innerHTML = `
+      ${movie.title}
+      <span class="dropdown-tag movie-tag">Movie</span>
+    `;
+    item.addEventListener('click', () => {
+      window.location.href = `movie-info.html?id=${movie.id}`;
+    });
+    dropdown.appendChild(item);
+  });
+
+  peopleResults.forEach(person => {
+    const item = document.createElement('div');
+    item.className = 'dropdown-item';
+    item.innerHTML = `
+      ${person.name}
+      <span class="dropdown-tag person-tag">Person</span>
+    `;
+    item.addEventListener('click', () => {
+      window.location.href = `person-info.html?name=${encodeURIComponent(person.name)}`;
+    });
+    dropdown.appendChild(item);
+  });
+
+  dropdown.style.display = 'block';
 }
