@@ -9,7 +9,7 @@ class App {
 
         this.register = this.register.bind(this);
 
-        document.querySelector('#login').addEventListener('submit', this.register);
+        document.querySelector('#register').addEventListener('submit', this.register);
     }
 
     async register(event){
