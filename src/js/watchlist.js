@@ -1,4 +1,4 @@
-class App {
+class Watchlist {
     constructor() {
         this.createItems();
     }
@@ -80,4 +80,4 @@ class App {
     }
 }
 
-export default App;
+export default Watchlist;

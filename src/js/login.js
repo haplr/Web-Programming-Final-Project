@@ -1,4 +1,4 @@
-class App {
+class Login {
     constructor(){
         this.usernameInput = document.querySelector('#username');
         this.passwordInput = document.querySelector('#password');
@@ -46,7 +46,7 @@ class App {
         // if the server responded with { success: true, message: "..." }, then the new user was created
         if (auth.success){
             window.location.href = 'account.html'; // update the page to account.html
-            localStorage.setItem("user", this.usernameInput.value)
+            localStorage.setItem("user", this.usernameInput.value);
         }
         else { // otherwise
             this.showError(auth.message); // show the error message div with the message received from the server
@@ -57,6 +57,18 @@ class App {
         this.errorDiv.textContent = message;
         this.errorDiv.classList.remove('hidden');
     }
+
+    static getActiveUser(){
+        return localStorage.getItem("user");
+    }
+
+    static logout() {
+        localStorage.removeItem("user");
+    }
+
+    static isLoggedIn() {
+        return this.getActiveUser() != null;
+    }
 }
 
-export default App;
+export default Login;

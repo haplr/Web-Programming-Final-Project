@@ -1,12 +1,13 @@
 import express from 'express';
 import fs from 'fs';
 import credentials from './data/credentials.json' with { type: 'json' };
+import movie_data from './data/movie.json' with { type: 'json' };
+import people_data from './data/people.json' with { type: 'json' };
 
 const app = express();
 
 app.use(express.json());
-app.use(express.static('src', { index: 'login.html' })); // { index: 'login.html' } tells the server to respond to "GET /" with login.html 
-app.use('/data', express.static('data'));
+app.use(express.static('src', { index: 'index.html' })); // { index: 'index.html' } tells the server to respond to "GET /" with index.html 
 
 // handle user login by POST
 app.post('/login', function(req, res){
@@ -53,9 +54,9 @@ app.post('/register', function(req, res){
     res.json({ success: true, message: "Registration successful."})
 })
 
-// POST to get the current user's first and last name
-app.post('/user', function(req, res){
-    const currentUser = credentials[req.body.username]; // hardcode the currently logged in user
+// GET the current user's first and last name
+app.get('/user', function(req, res){
+    const currentUser = credentials['testUser']; // hardcode the currently logged in user
 
     res.json({
         firstName: currentUser.firstName,
@@ -63,7 +64,22 @@ app.post('/user', function(req, res){
     }); // send the firstname and lastname of the currently logged in user
 });
 
-app.listen(3000, function(err){
+// GET the movie data
+app.get('/movie_data', function(req, res){
+    res.json(movie_data);
+});
+
+// GET the movie data
+app.get('/movie_data', function(req, res){
+    res.json(movie_data);
+});
+
+// GET the people data
+app.get('/people_data', function(req, res){
+    res.json(people_data);
+});
+
+app.listen(5500, function(err){
     if(err) console.log(err);
-    else console.log('Server listening on port 3000');
+    else console.log('Server listening on port 5500');
 })

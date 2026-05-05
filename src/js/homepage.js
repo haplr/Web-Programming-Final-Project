@@ -2,8 +2,8 @@ let allMovies = [];
 let allPeople = [];
 
 Promise.all([
-  fetch('/data/movie.json').then(res => res.json()),
-  fetch('/data/people.json').then(res => res.json())
+  fetch('/movie_data').then(res => res.json()),
+  fetch('/people_data').then(res => res.json())
 ])
 .then(([movies, people]) => {
   populateTrending(movies);
@@ -20,9 +20,11 @@ function populateTrending(movies) {
   section.innerHTML = `
     <h2>Trending</h2>
     <div class="trending-item">
-      <img src="${movie.posterURL}" alt="${movie.title} poster" />
+	  <a href="./movie-info.html?movie=${movie.id}">
+        <img src="${movie.posterURL}" alt="${movie.title} poster" />
+	  </a>
       <div class="trending-info">
-        <h3>${movie.title} (${movie.year})</h3>
+        <a href="./movie-info.html?movie=${movie.id}"><h3>${movie.title} (${movie.year})</h3></a>
         <p><strong>Genre:</strong> ${movie.genre.join(', ')}</p>
         <p><strong>Director:</strong> ${movie.director}</p>
         <p><strong>Cast:</strong> ${movie.cast.join(', ')}</p>
@@ -38,9 +40,11 @@ function populateWatchlist(movies) {
 
   const cards = movies.map(movie => `
     <div class="movie-card" data-id="${movie.id}">
-      <img src="${movie.posterURL}" alt="${movie.title} poster" />
-      <p>${movie.title}</p>
-      <button onclick="addToWatchlist(${movie.id})">+ Watchlist</button>
+	  <a href="./movie-info.html?movie=${movie.id}">
+        <img src="${movie.posterURL}" alt="${movie.title} poster" />
+        <p>${movie.title}</p>
+        <button onclick="addToWatchlist(${movie.id})">+ Watchlist</button>
+	  </a>
     </div>
   `).join('');
 
@@ -100,8 +104,8 @@ dropdown.id = 'search-dropdown';
 searchForm.appendChild(dropdown);
 
 Promise.all([
-  fetch('../data/movie.json').then(res => res.json()),
-  fetch('../data/people.json').then(res => res.json())
+  fetch('/movie_data').then(res => res.json()),
+  fetch('/people_data').then(res => res.json())
 ])
 .then(([movies, people]) => {
   allMovies = movies;
