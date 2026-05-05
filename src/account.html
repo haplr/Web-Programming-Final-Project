@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Account</title>
     <script type="module">
-        let user = localStorage.getItem("user");
+        import Login from './js/login.js'
         
-        if(user != null) {
-            document.querySelector("#account-name").textContent = `${user}'s Account`;
+        if(Login.isLoggedIn()) {
+            document.querySelector("#account-name").textContent = `${Login.getActiveUser()}'s Account`;
         } else {
             window.location.href = "login.html"
         }

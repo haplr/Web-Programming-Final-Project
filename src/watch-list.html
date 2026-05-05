@@ -6,14 +6,12 @@
     <title>WatchList</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script type="module">
-        import App from './js/watchlist.js'
-        new App();
-
-        let user = localStorage.getItem("user");
+        import Login from './js/login.js'
+        import Watchlist from './js/watchlist.js'
+        new Watchlist();
         
-        if(user != null) {
-            console.log(user);
-            document.querySelector("h1").textContent = `Welcome to ${user} WatchList`;
+        if(Login.isLoggedIn()) {
+            document.querySelector("h1").textContent = `Welcome to ${Login.getActiveUser()} WatchList`;
         } else {
             window.location.href = "login.html"
         }
