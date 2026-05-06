@@ -3,7 +3,7 @@ let allPeople = [];
 
 Promise.all([
   fetch('/movie_data').then(res => res.json()),
-  fetch('/people_data').then(res => res.json())
+fetch('/people_data').then(res => res.json())
 ])
 .then(([movies, people]) => {
   populateTrending(movies);
